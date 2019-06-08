@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ontologies/RiceDO/v1.1"
+     xml:base="http://www.ait.ac.th/riceman/RiceDO/v1.1"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1">
-    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2017/11/rice-disease"/>
+     ontologyIRI="http://www.ait.ac.th/riceman/RiceDO/v1.1">
+    <Prefix name="" IRI="http://www.ait.ac.th/riceman/RiceDO/v1.1"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="pdo" IRI="http://purl.obolibrary.org/obo/pdo.owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -35,211 +35,22 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">seymoume</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Blade"/>
+        <Class IRI="#YellowishGreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lesion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloweringToMaturity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGrowthStage"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Powdery"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wilt"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#anamorph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SpotOnPanicle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Upper"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EntireLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GreenishBlack"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Soft"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NonDistributable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Netlike"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Powder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Death"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ZigzagLeafhopper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Weak"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BoundarySheath"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasColor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlightOnEntireLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CylindricalTube"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SymptomCharacteristic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Boundary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RicePhytoplasmaDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Swell"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceViralDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SporeBall"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tall"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Brown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Groupped"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Burn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Back"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LinearLesionOnSheath"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Color"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PlantBacterialDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tillering"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Stunt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialLeafStreakDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Grayish"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GrayishGreen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialBlightDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Leaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ball"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PlantDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spikelet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CenterSheath"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BrownPlanthopper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Orange"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#synanamorph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GrayishPink"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Seed"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Feathery"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distributable"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Twist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Blight"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Triticum_aestivum"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PaleYellow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RiceOrangeLeafDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GrayishBrown"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dry"/>
+        <Class IRI="#White"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sheath"/>
@@ -248,7 +59,340 @@
         <Class IRI="#LesionOnNeck"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasDistribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feathery"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#anamorph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Narrow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Middle"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Panicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distributable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrayishBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grassy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasShape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UpperSheath"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spikelet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RicePhytoplasmaDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaleGreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceViralDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CenterSheath"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpotOnSheath"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CircularSpotOnLeaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Halo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Netlike"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonDistributable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/PlantBacterialDisease"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LesionOnSheath"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialLeafStreakDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialBlightDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiceOrangeLeafDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Abnormality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/PlantDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transparent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlagLeaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiceGallDwarfVirusDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZigzagLeafhopper"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#synanamorph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpotOnLeaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoundarySheath"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlightOnEntireLeaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Triticum_aestivum"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wilt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powdery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Web"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pimple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenRiceLeafhopper"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Glycine_max"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptomAt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PinkishWhite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransplantingToPanicleInitiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Back"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlightOnLeaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DarkGreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrayWhite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceKernelSmutFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Death"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Root"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntireLeaf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#telomorph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EllipsoidSpotOnLeaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/PlantFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YellowishBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maturity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiceBlackBug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseBlade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Branch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaleYellow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlightOnUpperLeaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DarkReddish"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#abnormalityGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TopSideBlade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightYellow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceLeafScaldfungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinearLesionOnLeaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Excessive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DarkBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Twist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiceDirtyPanicleDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discoloration"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Gray"/>
@@ -260,190 +404,28 @@
         <Class IRI="#Unfill"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RiceDirtyPanicleDisease"/>
+        <Class IRI="#Ellipsoid"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PanicleInitiation"/>
+        <Class IRI="#BrownPlanthopper"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Glycine_max"/>
+        <Class IRI="#Thin"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Symptom"/>
+        <Class IRI="#Short"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
+        <Class IRI="#Florals"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RiceBlackBug"/>
+        <Class IRI="#GrayishPink"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DarkBrown"/>
+        <Class IRI="#Grayish"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DarkReddish"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fall"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BaseBlade"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FloweringToMaturity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Abnormality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlightOnUpperLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Neck"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TransplantingToPanicleInitiation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DarkGreen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Branch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Speck"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Shape"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RedBrown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceKernelSmutFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TransplantingToTillering"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EllipsoidSpotOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#telomorph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Root"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PlantFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PimpleOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Eye"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LinearLesionOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSymptomAt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#YellowishGreen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GreenRiceLeafhopper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PinkishWhite"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasGrowthStage"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlightOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PlantPart"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UnderSideBlade"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spiral"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceLeafScaldfungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BrownishGray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Animal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lower"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Shrivel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pimple"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Black"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Seedling"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Yellow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlightOnBoundaryLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LesionOnNode"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSymptom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#YellowishBrown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#VeinSheath"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TilleringToMaturity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TransplantingToFlowering"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FlagLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spore"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RiceGallDwarfVirusDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Oval"/>
+        <Class IRI="#LightBrown"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Zea_mays"/>
@@ -455,64 +437,73 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Tiller"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gall"/>
+        <Class IRI="#Leaf"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SpotOnLeaf"/>
+        <Class IRI="#Green"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Red"/>
+        <Class IRI="#Linear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Node"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransplantingToTillering"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Florals"/>
+        <Class IRI="#Ball"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Yellowish"/>
+        <Class IRI="#BlackFruiting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Maturity"/>
+        <Class IRI="#Eye"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/RiceNarrowBrownLeafSpotFungalDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Distribution"/>
+        <Class IRI="#PimpleOnLeaf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GreenishGray"/>
+        <Class IRI="#TilleringToMaturity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LeafEdge"/>
+        <Class IRI="#Yellow"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Short"/>
+        <Class IRI="#LesionOnNode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Web"/>
+        <Class IRI="#TransplantingToFlowering"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GrayWhite"/>
+        <Class IRI="#Shrivel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Purple"/>
+        <Class IRI="#PanicleInitiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spore"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/user/ontologies/2017/11/rice-disease#1stLeaf"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Oryza_sativa_L"/>
+        <Class IRI="#LinearLesionOnSheath"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LightBrown"/>
+        <Class IRI="#LeafEdge"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Oryza_sativa_L"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
@@ -521,28 +512,31 @@
         <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#abnormalityGroup"/>
+        <Class IRI="#BlackishBrown"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PaleGreen"/>
+        <Class IRI="#GreenishGray"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Node"/>
+        <Class IRI="#VeinSheath"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Malform"/>
+        <Class IRI="#Oval"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sunken"/>
+        <Class IRI="#Powder"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasShape"/>
+        <Class IRI="#CylindricalTube"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Grassy"/>
+        <Class IRI="#Lower"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
@@ -551,157 +545,163 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Solanaceae_spp"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LightYellow"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Middle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transparent"/>
+        <Class IRI="#BrownishGray"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/RiceYellowDwarfPhytoplasmaDisease"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasDistribution"/>
+        <Class IRI="#Front"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Lesion"/>
+        <Class IRI="#GrayishGreen"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TopSideBlade"/>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlantPart"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Discoloration"/>
+        <ObjectProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Black"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Ellipsoid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#White"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceFalseSmutFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GrowthStageCharacteristic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Flowering"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlackishBrown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Excessive"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transplanting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CircularSpotOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#YellowBrown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UpperSheath"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RootGrowing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#VeinBlade"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GrowthStage"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rot"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ReddishBrown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Halo"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PlantViralDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TransplantingToMaturity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlackFruiting"/>
+        <Class IRI="#GreenishBlack"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SpreadableDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Thin"/>
+        <Class IRI="#BlightOnBoundaryLeaf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LowerPortion"/>
+        <Class IRI="#Seedling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SpotOnSheath"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceFalseSmutFungalDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Panicle"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Reduce"/>
+        <Class IRI="#Upper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Front"/>
+        <Class IRI="#Orange"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Stem"/>
+        <Class IRI="#Stunt"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+        <Class IRI="#Yellowish"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <Class IRI="#UnderSideBlade"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Tip"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Narrow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Linear"/>
+        <Class IRI="#RootGrowing"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Curl"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Green"/>
+        <Class IRI="#LowerPortion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrowthStage"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransplantingToMaturity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reduce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SporeBall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrowthStageCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/PlantViralDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeinBlade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flowering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tillering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transplanting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymptomCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Groupped"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spiral"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpotOnPanicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReddishBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sunken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tiller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YellowBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swell"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#GrowthStageCharacteristic"/>
@@ -5203,6 +5203,41 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BrownPlanthopper</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">brown planthopper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GreenRiceLeafhopper</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">green rice leafhopper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiceBlackBug</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice black bug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiceDirtyPanicleDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice dirty panicle disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiceGallDwarfVirusDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rice gall dwarf virus disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiceOrangeLeafDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice orange leaf disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZigzagLeafhopper</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">zigzag leafhopper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.geneontology.org/formats/oboInOwl#SubsetProperty</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">subset_property</Literal>
     </AnnotationAssertion>
@@ -5255,41 +5290,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.geneontology.org/formats/oboInOwl#inSubset</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">in_subset</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BrownPlanthopper</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">brown planthopper</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#GreenRiceLeafhopper</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">green rice leafhopper</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RiceBlackBug</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice black bug</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RiceDirtyPanicleDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice dirty panicle disease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RiceGallDwarfVirusDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rice gall dwarf virus disease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RiceOrangeLeafDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice orange leaf disease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ZigzagLeafhopper</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">zigzag leafhopper</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Glycine_max"/>
