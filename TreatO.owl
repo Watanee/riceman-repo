@@ -1,19 +1,18 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ontologies/RiceDO/v1.1"
+     xml:base="http://www.ait.ac.th/riceman/TreatO/v1.1"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1">
+     ontologyIRI="http://www.ait.ac.th/riceman/TreatO/v1.1"
+     versionIRI="http://www.ait.ac.th/riceman/TreatO/v1.1">
     <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2017/11/rice-disease"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="pdo" IRI="http://purl.obolibrary.org/obo/pdo.owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="RiceDO" IRI="http://www.semanticweb.org/ontologies/RiceDo#"/>
     <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">plant_disease_ontology</Literal>
@@ -35,187 +34,52 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">seymoume</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Blade"/>
+        <Class IRI="#RiceBacterialBlightDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Powdery"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wilt"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#anamorph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SpotOnPanicle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Upper"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EntireLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GreenishBlack"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Soft"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NonDistributable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Netlike"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Powder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Death"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ZigzagLeafhopper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Weak"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BoundarySheath"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasColor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlightOnEntireLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CylindricalTube"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SymptomCharacteristic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Boundary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RicePhytoplasmaDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Swell"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceViralDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SporeBall"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tall"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Brown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Groupped"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Burn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Back"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LinearLesionOnSheath"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Color"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PlantBacterialDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tillering"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Stunt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialLeafStreakDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Grayish"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GrayishGreen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialBlightDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Leaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ball"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PlantDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spikelet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CenterSheath"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BrownPlanthopper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Orange"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#synanamorph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GrayishPink"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Seed"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Feathery"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distributable"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Solanaceae_spp"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Twist"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Blight"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceLeafScaldfungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P._aeruginosa"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#anamorph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buprofezin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serratia_marcescens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceYellowDwarfPhytoplasmaDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#Animal"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Triticum_aestivum"/>
@@ -224,424 +88,130 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PaleYellow"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceOrangeLeafDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RiceOrangeLeafDisease"/>
+        <Class IRI="#CopperOxychloride"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GrayishBrown"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dry"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sheath"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LesionOnNeck"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LesionOnSheath"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LesionOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Unfill"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RiceDirtyPanicleDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PanicleInitiation"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Glycine_max"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Symptom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RiceBlackBug"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DarkBrown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DarkReddish"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fall"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BaseBlade"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FloweringToMaturity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Abnormality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlightOnUpperLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Neck"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TransplantingToPanicleInitiation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DarkGreen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Branch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Speck"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Shape"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RedBrown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceKernelSmutFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TransplantingToTillering"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EllipsoidSpotOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#telomorph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Root"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/PlantFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PimpleOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Eye"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LinearLesionOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSymptomAt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#YellowishGreen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GreenRiceLeafhopper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PinkishWhite"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasGrowthStage"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlightOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PlantPart"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UnderSideBlade"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spiral"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceLeafScaldfungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BrownishGray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Animal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lower"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Shrivel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pimple"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Black"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Seedling"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Yellow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BlightOnBoundaryLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LesionOnNode"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSymptom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#YellowishBrown"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#VeinSheath"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TilleringToMaturity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TransplantingToFlowering"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FlagLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Spore"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RiceGallDwarfVirusDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Oval"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Zea_mays"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tiller"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gall"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SpotOnLeaf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Red"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Florals"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Yellowish"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Maturity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceNarrowBrownLeafSpotFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distribution"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GreenishGray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LeafEdge"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Short"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Web"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GrayWhite"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Purple"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/user/ontologies/2017/11/rice-disease#1stLeaf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Oryza_sativa_L"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LightBrown"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#abnormalityGroup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PaleGreen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Node"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Malform"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sunken"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasShape"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Grassy"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Solanaceae_spp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LightYellow"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Middle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transparent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceYellowDwarfPhytoplasmaDisease"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDistribution"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lesion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TopSideBlade"/>
+        <Class IRI="#Bacillus_sp."/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Discoloration"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Ellipsoid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#White"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceDirtyPanicleDisease"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFalseSmutFungalDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GrowthStageCharacteristic"/>
+        <Class IRI="#Iprodione"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Flowering"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Glycine_max"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#ZigzagLeafhopper"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BlackishBrown"/>
+        <Class IRI="#Carbosulfan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Excessive"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Transplanting"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceBlackBug"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CircularSpotOnLeaf"/>
+        <Class IRI="#Steptocycline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fluorescens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Propiconazole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceGallDwarfVirusDisease"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Zea_mays"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#YellowBrown"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RicePhytoplasmaDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UpperSheath"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RootGrowing"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceViralDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#VeinBlade"/>
+        <ObjectProperty IRI="#isBiologicalControlOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GrowthStage"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Rot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strobilurin"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#B._subtilis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carbendazim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triflumizole"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ReddishBrown"/>
+        <Class IRI="#Hexaconazole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Halo"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P._fluorescens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceNarrowBrownLeafSpotFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceKernelSmutFungalDisease"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
@@ -650,83 +220,101 @@
         <Class IRI="http://purl.obolibrary.org/obo/PlantViralDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TransplantingToMaturity"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BlackFruiting"/>
+        <Class IRI="#Pyrometrozin"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SpreadableDisease"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PlantBacterialDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Thin"/>
+        <Class IRI="#Triazole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LowerPortion"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#telomorph"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SpotOnSheath"/>
+        <Class IRI="#Zineb"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Panicle"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PlantFungalDisease"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Reduce"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Front"/>
+        <Class IRI="#Dinotefuran"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Stem"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialLeafStreakDisease"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#Oryza_sativa_L"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P._putida"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#B._laterosporus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Azoxystrobin"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pseudomonas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/PlantDisease"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Tip"/>
+        <Class IRI="#Pseudomonas_sp."/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Narrow"/>
+        <Class IRI="#Trifloxystrobin"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Linear"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#BrownPlanthopper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Curl"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#GreenRiceLeafhopper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Green"/>
+        <Class IRI="#BiologicalControl"/>
     </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#GrowthStageCharacteristic"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasGrowthStage"/>
-            <Class IRI="#GrowthStage"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#SpreadableDisease"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/PlantDisease"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasDistribution"/>
-                <Class IRI="#Distributable"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#SymptomCharacteristic"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSymptom"/>
-            <Class IRI="#Abnormality"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
+    <Declaration>
+        <ObjectProperty IRI="#isChemicalControlOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mancozeb"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/pdo#synanamorph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Validamycin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#B._pumilus"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/PlantBacterialDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/PlantDisease"/>
@@ -740,99 +328,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/PlantDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialBlightDisease"/>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialBlightDisease"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <Class IRI="#TransplantingToFlowering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#BlightOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#GrayishGreen"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#BlightOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#PaleGreen"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#BlightOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Yellow"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#BlightOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Yellowish"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#PimpleOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Brown"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#PimpleOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Yellow"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Transplanting"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptom"/>
-                        <Class IRI="#Wilt"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasDistribution"/>
-                    <Class IRI="#Distributable"/>
-                </ObjectSomeValuesFrom>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/PlantBacterialDisease"/>
     </SubClassOf>
@@ -841,525 +336,20 @@
         <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialLeafStreakDisease"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <Class IRI="#TransplantingToFlowering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LinearLesionOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Orange"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LinearLesionOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Yellow"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LinearLesionOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptom"/>
-                        <Class IRI="#Transparent"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#PimpleOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Yellow"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasDistribution"/>
-                    <Class IRI="#Distributable"/>
-                </ObjectSomeValuesFrom>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <Class IRI="#TransplantingToFlowering"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#PaleGreen"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasGrowthStage"/>
-                    <Class IRI="#Tillering"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Tall"/>
-                        <Class IRI="#Thin"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Stem"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#White"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasShape"/>
-                    <Class IRI="#Powder"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Powdery"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#LowerPortion"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#PaleGreen"/>
-                        <Class IRI="#YellowishGreen"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Thin"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Leaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasGrowthStage"/>
-                    <Class IRI="#Transplanting"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Lesion"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Root"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Death"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Seedling"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Dry"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Leaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Reduce"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Tiller"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#RootGrowing"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#LowerPortion"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Unfill"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Spikelet"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <Class IRI="#TransplantingToFlowering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LesionOnNeck"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Black"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Flowering"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LesionOnNeck"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#GrayishBrown"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Flowering"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#SpotOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Black"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Tillering"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasShape"/>
-                        <Class IRI="#Eye"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#SpotOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Brown"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Tillering"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasShape"/>
-                        <Class IRI="#Eye"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#SpotOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Gray"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Transplanting"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasShape"/>
-                        <Class IRI="#Eye"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Flowering"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptom"/>
-                        <Class IRI="#Fall"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptomAt"/>
-                        <Class IRI="#Panicle"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Flowering"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptom"/>
-                        <Class IRI="#Stunt"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptomAt"/>
-                        <Class IRI="#Panicle"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Transplanting"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptom"/>
-                        <Class IRI="#Burn"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasDistribution"/>
-                <Class IRI="#Distributable"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <Class IRI="#TransplantingToMaturity"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#SpotOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#LightYellow"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Tillering"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasShape"/>
-                        <Class IRI="#Halo"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#SpotOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#Brown"/>
-                            <Class IRI="#DarkBrown"/>
-                            <Class IRI="#Grayish"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Tillering"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasShape"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#Circular"/>
-                            <Class IRI="#Oval"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#SpotOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#Brown"/>
-                            <Class IRI="#YellowBrown"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Transplanting"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasDistribution"/>
-                    <Class IRI="#Distributable"/>
-                </ObjectSomeValuesFrom>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFalseSmutFungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceFalseSmutFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <Class IRI="#FloweringToMaturity"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceFalseSmutFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#SporeBall"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#GreenishBlack"/>
-                        <Class IRI="#Orange"/>
-                        <Class IRI="#Purple"/>
-                        <Class IRI="#Yellow"/>
-                        <Class IRI="#YellowishGreen"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Spikelet"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceFalseSmutFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#Black"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#BlackFruiting"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Spikelet"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
@@ -1370,260 +360,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/RiceViralDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <Class IRI="#TransplantingToPanicleInitiation"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#DarkGreen"/>
-                        <Class IRI="#LightYellow"/>
-                        <Class IRI="#YellowishGreen"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Narrow"/>
-                        <Class IRI="#Short"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Leaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Excessive"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Tiller"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Grassy"/>
-                        <Class IRI="#Stunt"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Stem"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceKernelSmutFungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceKernelSmutFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#Black"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasShape"/>
-                    <Class IRI="#Powder"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Spore"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Spikelet"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceKernelSmutFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Discoloration"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Spikelet"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceKernelSmutFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Maturity"/>
-            </ObjectSomeValuesFrom>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceLeafScaldfungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceLeafScaldfungalDisease"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <Class IRI="#TransplantingToTillering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LesionOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#GrayishBrown"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasShape"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#Ellipsoid"/>
-                            <Class IRI="#Oval"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LesionOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#LightBrown"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasShape"/>
-                        <Class IRI="#Halo"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#DarkBrown"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Transplanting"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptom"/>
-                        <Class IRI="#Burn"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptomAt"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#LeafEdge"/>
-                            <Class IRI="#Tip"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceNarrowBrownLeafSpotFungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceNarrowBrownLeafSpotFungalDisease"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <Class IRI="#TilleringToMaturity"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LinearLesionOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#Brown"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#Tillering"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LinearLesionOnSheath"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#DarkBrown"/>
-                            <Class IRI="#LightBrown"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#Brown"/>
-                            <Class IRI="#LightBrown"/>
-                            <Class IRI="#Yellow"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasShape"/>
-                        <Class IRI="#Netlike"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptom"/>
-                        <Class IRI="#Spot"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptomAt"/>
-                        <Class IRI="#Sheath"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RicePhytoplasmaDisease"/>
@@ -1634,607 +380,20 @@
         <Class IRI="http://purl.obolibrary.org/obo/RiceViralDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <Class IRI="#TransplantingToPanicleInitiation"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Brown"/>
-                        <Class IRI="#Yellow"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasShape"/>
-                    <Class IRI="#Spiral"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Twist"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#BaseBlade"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#DarkBrown"/>
-                        <Class IRI="#PaleYellow"/>
-                        <Class IRI="#White"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Swell"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#VeinBlade"/>
-                        <Class IRI="#VeinSheath"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasGrowthStage"/>
-                    <Class IRI="#PanicleInitiation"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Malform"/>
-                        <Class IRI="#Twist"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#FlagLeaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Gall"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Sheath"/>
-                        <Class IRI="#UnderSideBlade"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Stunt"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Stem"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
-        <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#abnormalityGroup"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptom"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#Dry"/>
-                            <Class IRI="#Wilt"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Leaf"/>
-                        <Class IRI="#Sheath"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <Class IRI="#TilleringToMaturity"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LesionOnLeaf"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#Brown"/>
-                            <Class IRI="#GrayWhite"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LesionOnSheath"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasColor"/>
-                        <Class IRI="#GrayishGreen"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="#LesionOnSheath"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasShape"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="#Ellipsoid"/>
-                            <Class IRI="#Oval"/>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#abnormalityGroup"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasDistribution"/>
-                    <Class IRI="#Distributable"/>
-                </ObjectSomeValuesFrom>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#LesionOnSheath"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#BlackishBrown"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#SpotOnSheath"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#BrownishGray"/>
-                        <Class IRI="#DarkReddish"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#Black"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Thin"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Spikelet"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#Brown"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Spot"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#BoundarySheath"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#White"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasShape"/>
-                    <Class IRI="#Powder"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Powdery"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Sheath"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#BlackishBrown"/>
-                        <Class IRI="#Brown"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Spot"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Leaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#DarkBrown"/>
-                        <Class IRI="#RedBrown"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Florals"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Gray"/>
-                        <Class IRI="#PinkishWhite"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Spot"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#CenterSheath"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Rot"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Panicle"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Rot"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Sheath"/>
-                        <Class IRI="#UpperSheath"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <Class IRI="#FloweringToMaturity"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#SpotOnSheath"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#Brown"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Brown"/>
-                        <Class IRI="#DarkBrown"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Lesion"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Stem"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Rot"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Sheath"/>
-                        <Class IRI="#Stem"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Death"/>
-                        <Class IRI="#Weak"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Stem"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceViralDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <Class IRI="#TransplantingToFlowering"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#SpotOnLeaf"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Brown"/>
-                        <Class IRI="#Yellow"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#DarkBrown"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Spot"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Spikelet"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Green"/>
-                        <Class IRI="#Yellow"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Discoloration"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Blade"/>
-                        <Class IRI="#Tip"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Unfill"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Spikelet"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Death"/>
-                        <Class IRI="#Reduce"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Tiller"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Short"/>
-                        <Class IRI="#Stunt"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Stem"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RiceViralDisease"/>
@@ -2245,1458 +404,696 @@
         <Class IRI="http://purl.obolibrary.org/obo/RicePhytoplasmaDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceYellowDwarfPhytoplasmaDisease"/>
+        <Class IRI="#Azoxystrobin"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azoxystrobin"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectIntersectionOf>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasGrowthStage"/>
-                        <Class IRI="#PanicleInitiation"/>
-                    </ObjectSomeValuesFrom>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#hasSymptomAt"/>
-                        <Class IRI="#Stem"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Death"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceYellowDwarfPhytoplasmaDisease"/>
+        <Class IRI="#Azoxystrobin"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#PaleYellow"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Wilt"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Leaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceFalseSmutFungalDisease"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceYellowDwarfPhytoplasmaDisease"/>
+        <Class IRI="#B._laterosporus"/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B._laterosporus"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Excessive"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Tiller"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RiceYellowDwarfPhytoplasmaDisease"/>
+        <Class IRI="#B._pumilus"/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B._pumilus"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Short"/>
-                        <Class IRI="#Stunt"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Stem"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Animal"/>
+        <Class IRI="#B._pumilus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B._subtilis"/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B._subtilis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B._subtilis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B._subtilis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B._subtilis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bacillus_sp."/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bacillus_sp."/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bacillus_sp."/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bacillus_sp."/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="#RiceBacterialBlightDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceYellowDwarfPhytoplasmaDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#BrownPlanthopper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#GreenRiceLeafhopper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceGallDwarfVirusDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceOrangeLeafDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buprofezin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#ZigzagLeafhopper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carbendazim"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carbendazim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carbosulfan"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carbosulfan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceBlackBug"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CopperOxychloride"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CopperOxychloride"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialLeafStreakDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CopperOxychloride"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CopperOxychloride"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="#RiceBacterialBlightDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinotefuran"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinotefuran"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceGrassyStuntViralDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinotefuran"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceRuggedStuntViralDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinotefuran"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceYellowDwarfPhytoplasmaDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinotefuran"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#GreenRiceLeafhopper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinotefuran"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceGallDwarfVirusDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinotefuran"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceOrangeLeafDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinotefuran"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#ZigzagLeafhopper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluorescens"/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluorescens"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hexaconazole"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hexaconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hexaconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iprodione"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iprodione"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mancozeb"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mancozeb"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceLeafScaldfungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mancozeb"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mancozeb"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceDirtyPanicleDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._aeruginosa"/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._aeruginosa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._aeruginosa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._aeruginosa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._aeruginosa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._fluorescens"/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._fluorescens"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._fluorescens"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._fluorescens"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._fluorescens"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceTungroViralDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._putida"/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P._putida"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propiconazole"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propiconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propiconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propiconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceFalseSmutFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propiconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceNarrowBrownLeafSpotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propiconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propiconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propiconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propiconazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceDirtyPanicleDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudomonas"/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudomonas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudomonas_sp."/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudomonas_sp."/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudomonas_sp."/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudomonas_sp."/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pyrometrozin"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pyrometrozin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#BrownPlanthopper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiceBacterialBlightDisease"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RiceBacterialDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Serratia_marcescens"/>
+        <Class IRI="#BiologicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Serratia_marcescens"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBiologicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steptocycline"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steptocycline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="#RiceBacterialBlightDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strobilurin"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strobilurin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triazole"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBlastFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trifloxystrobin"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trifloxystrobin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBrownSpotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trifloxystrobin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triflumizole"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triflumizole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceBakanaeFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Validamycin"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Validamycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceSheathBlightFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Validamycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RiceStemRotFungalDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zineb"/>
+        <Class IRI="#ChemicalControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zineb"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isChemicalControlOf"/>
+            <Class IRI="#RiceBacterialBlightDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#Animal"/>
         <Class IRI="http://purl.obolibrary.org/obo/PlantDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Back"/>
-        <Class IRI="#Leaf"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#BrownPlanthopper"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#Animal"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Ball"/>
-        <Class IRI="#Shape"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#GreenRiceLeafhopper"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#Animal"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BaseBlade"/>
-        <Class IRI="#Blade"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceBlackBug"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#Animal"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Black"/>
-        <Class IRI="#Color"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlackFruiting"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlackishBrown"/>
-        <Class IRI="#Brown"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Blade"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Blight"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlightOnBoundaryLeaf"/>
-        <Class IRI="#BlightOnLeaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlightOnBoundaryLeaf"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSymptomAt"/>
-            <Class IRI="#Boundary"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlightOnEntireLeaf"/>
-        <Class IRI="#BlightOnLeaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlightOnEntireLeaf"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSymptomAt"/>
-            <Class IRI="#EntireLeaf"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlightOnLeaf"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlightOnLeaf"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Blight"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptomAt"/>
-                <Class IRI="#Leaf"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlightOnUpperLeaf"/>
-        <Class IRI="#BlightOnLeaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BlightOnUpperLeaf"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSymptomAt"/>
-            <Class IRI="#Upper"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Boundary"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BoundarySheath"/>
-        <Class IRI="#Sheath"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Branch"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Brown"/>
-        <Class IRI="#Color"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BrownPlanthopper"/>
-        <Class IRI="#Animal"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BrownPlanthopper"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#Yellow"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Burn"/>
-                        <Class IRI="#Dry"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Leaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BrownishGray"/>
-        <Class IRI="#Gray"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Burn"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CenterSheath"/>
-        <Class IRI="#Sheath"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Circular"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CircularSpotOnLeaf"/>
-        <Class IRI="#SpotOnLeaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CircularSpotOnLeaf"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasShape"/>
-                <Class IRI="#Circular"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Spot"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Color"/>
-        <Class IRI="#Abnormality"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Curl"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CylindricalTube"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DarkBrown"/>
-        <Class IRI="#Brown"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DarkGreen"/>
-        <Class IRI="#Green"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DarkReddish"/>
-        <Class IRI="#Red"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Death"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Discoloration"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Distributable"/>
-        <Class IRI="#Distribution"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dry"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ellipsoid"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EllipsoidSpotOnLeaf"/>
-        <Class IRI="#SpotOnLeaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EllipsoidSpotOnLeaf"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasShape"/>
-                <Class IRI="#Ellipsoid"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Spot"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EntireLeaf"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Excessive"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Eye"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fall"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Feathery"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FlagLeaf"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Florals"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Flowering"/>
-        <Class IRI="#GrowthStage"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FloweringToMaturity"/>
-        <Class IRI="#GrowthStageCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FloweringToMaturity"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Flowering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Maturity"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Front"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gall"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Grassy"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gray"/>
-        <Class IRI="#Color"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GrayWhite"/>
-        <Class IRI="#Gray"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Grayish"/>
-        <Class IRI="#Gray"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GrayishBrown"/>
-        <Class IRI="#Brown"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GrayishBrown"/>
-        <Class IRI="#Gray"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GrayishGreen"/>
-        <Class IRI="#Green"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GrayishPink"/>
-        <Class IRI="#Gray"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Green"/>
-        <Class IRI="#Color"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GreenRiceLeafhopper"/>
-        <Class IRI="#Animal"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GreenRiceLeafhopper"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#Yellow"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Leaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GreenRiceLeafhopper"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Stunt"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Panicle"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GreenishBlack"/>
-        <Class IRI="#Black"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GreenishGray"/>
-        <Class IRI="#Green"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Groupped"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Halo"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Leaf"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LeafEdge"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lesion"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LesionOnLeaf"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LesionOnLeaf"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Lesion"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptomAt"/>
-                <Class IRI="#Neck"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LesionOnNeck"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LesionOnNeck"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Lesion"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptomAt"/>
-                <Class IRI="#Neck"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LesionOnNode"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LesionOnNode"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Lesion"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptomAt"/>
-                <Class IRI="#Node"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LesionOnSheath"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LesionOnSheath"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Lesion"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptomAt"/>
-                <Class IRI="#Sheath"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LightBrown"/>
-        <Class IRI="#Brown"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LightYellow"/>
-        <Class IRI="#Yellow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Linear"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LinearLesionOnLeaf"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LinearLesionOnLeaf"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasShape"/>
-                <Class IRI="#Linear"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Lesion"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptomAt"/>
-                <Class IRI="#Leaf"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LinearLesionOnSheath"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LinearLesionOnSheath"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasShape"/>
-                <Class IRI="#Linear"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Lesion"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptomAt"/>
-                <Class IRI="#Sheath"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lower"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LowerPortion"/>
-        <Class IRI="#Stem"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Malform"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Maturity"/>
-        <Class IRI="#GrowthStage"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Middle"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Narrow"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Neck"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Netlike"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Node"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonDistributable"/>
-        <Class IRI="#Distribution"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Orange"/>
-        <Class IRI="#Color"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Oval"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PaleGreen"/>
-        <Class IRI="#Green"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PaleYellow"/>
-        <Class IRI="#Yellow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Panicle"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PanicleInitiation"/>
-        <Class IRI="#GrowthStage"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pimple"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PimpleOnLeaf"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PimpleOnLeaf"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Pimple"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptomAt"/>
-                <Class IRI="#Leaf"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PinkishWhite"/>
-        <Class IRI="#White"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Powder"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Powdery"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Purple"/>
-        <Class IRI="#Color"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Red"/>
-        <Class IRI="#Color"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RedBrown"/>
-        <Class IRI="#Gray"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ReddishBrown"/>
-        <Class IRI="#Brown"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reduce"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceBlackBug"/>
-        <Class IRI="#Animal"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceBlackBug"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#LesionOnSheath"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#ReddishBrown"/>
-                        <Class IRI="#Yellow"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceBlackBug"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#BlackishBrown"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Burn"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Boundary"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceBlackBug"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Yellow"/>
-                        <Class IRI="#YellowBrown"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Stunt"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Stem"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceBlackBug"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Stunt"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Panicle"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceBlackBug"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Unfill"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Spikelet"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceBlackBug"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Wilt"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Tiller"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceDirtyPanicleDisease"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceDirtyPanicleDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceFungalDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RiceDirtyPanicleDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#SpotOnPanicle"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Black"/>
-                        <Class IRI="#Brown"/>
-                        <Class IRI="#GrayishPink"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceGallDwarfVirusDisease"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceGallDwarfVirusDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RiceViralDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RiceGallDwarfVirusDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <Class IRI="#TransplantingToPanicleInitiation"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceGallDwarfVirusDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#DarkGreen"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Short"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Leaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceGallDwarfVirusDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#PaleGreen"/>
-                        <Class IRI="#White"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Pimple"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Sheath"/>
-                        <Class IRI="#UnderSideBlade"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceGallDwarfVirusDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Reduce"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Tiller"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceGallDwarfVirusDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Swell"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#VeinBlade"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceOrangeLeafDisease"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceOrangeLeafDisease"/>
         <Class IRI="http://purl.obolibrary.org/obo/RicePhytoplasmaDisease"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RiceOrangeLeafDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#Orange"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#EntireLeaf"/>
-                        <Class IRI="#Tip"/>
-                        <Class IRI="http://www.semanticweb.org/user/ontologies/2017/11/rice-disease#1stLeaf"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceOrangeLeafDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Death"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Stem"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceOrangeLeafDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Reduce"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Tiller"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RiceOrangeLeafDisease"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Curl"/>
-                        <Class IRI="#Dry"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Leaf"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Root"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RootGrowing"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rot"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Seed"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Seedling"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Shape"/>
-        <Class IRI="#Abnormality"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sheath"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Short"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Shrivel"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Soft"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Speck"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spikelet"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spiral"/>
-        <Class IRI="#Shape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spore"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SporeBall"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SporeBall"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasShape"/>
-                <Class IRI="#Ball"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Spore"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spot"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpotOnLeaf"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpotOnLeaf"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSymptom"/>
-            <Class IRI="#Spot"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpotOnLeaf"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSymptomAt"/>
-            <Class IRI="#Leaf"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpotOnPanicle"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpotOnPanicle"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSymptom"/>
-            <Class IRI="#Spot"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpotOnPanicle"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSymptomAt"/>
-            <Class IRI="#Panicle"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpotOnSheath"/>
-        <Class IRI="#SymptomCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpotOnSheath"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptom"/>
-                <Class IRI="#Spot"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasSymptomAt"/>
-                <Class IRI="#Sheath"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Stem"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Stunt"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sunken"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Swell"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Symptom"/>
-        <Class IRI="#Abnormality"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tall"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Thin"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tiller"/>
-        <Class IRI="#PlantPart"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tillering"/>
-        <Class IRI="#GrowthStage"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TilleringToMaturity"/>
-        <Class IRI="#GrowthStageCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TilleringToMaturity"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Flowering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Maturity"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#PanicleInitiation"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Tillering"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tip"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TopSideBlade"/>
-        <Class IRI="#Blade"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Transparent"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Transplanting"/>
-        <Class IRI="#GrowthStage"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TransplantingToFlowering"/>
-        <Class IRI="#GrowthStageCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TransplantingToFlowering"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Flowering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#PanicleInitiation"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Tillering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Transplanting"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TransplantingToMaturity"/>
-        <Class IRI="#GrowthStageCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TransplantingToPanicleInitiation"/>
-        <Class IRI="#GrowthStageCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TransplantingToPanicleInitiation"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#PanicleInitiation"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Tillering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Transplanting"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TransplantingToTillering"/>
-        <Class IRI="#GrowthStageCharacteristic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TransplantingToTillering"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Tillering"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasGrowthStage"/>
-                <Class IRI="#Transplanting"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Twist"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UnderSideBlade"/>
-        <Class IRI="#Blade"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Unfill"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Upper"/>
-        <Class IRI="#Leaf"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UpperSheath"/>
-        <Class IRI="#Sheath"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VeinBlade"/>
-        <Class IRI="#Blade"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VeinSheath"/>
-        <Class IRI="#Sheath"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Weak"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Web"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#White"/>
-        <Class IRI="#Color"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wilt"/>
-        <Class IRI="#Symptom"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Yellow"/>
-        <Class IRI="#Color"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#YellowBrown"/>
-        <Class IRI="#Yellow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Yellowish"/>
-        <Class IRI="#Yellow"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#YellowishBrown"/>
-        <Class IRI="#Brown"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#YellowishGreen"/>
-        <Class IRI="#Green"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ZigzagLeafhopper"/>
-        <Class IRI="#Animal"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ZigzagLeafhopper"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasColor"/>
-                    <Class IRI="#Orange"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Curl"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="#Boundary"/>
-                        <Class IRI="#Leaf"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ZigzagLeafhopper"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#abnormalityGroup"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptom"/>
-                    <Class IRI="#Dry"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#hasSymptomAt"/>
-                    <Class IRI="#Tip"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/user/ontologies/2017/11/rice-disease#1stLeaf"/>
-        <Class IRI="#Leaf"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#ZigzagLeafhopper"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/RiceDO/v1.1#Animal"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#BlightOnBoundaryLeaf"/>
-        <Class IRI="#BlightOnEntireLeaf"/>
-        <Class IRI="#BlightOnUpperLeaf"/>
+        <Class IRI="#Azoxystrobin"/>
+        <Class IRI="#Carbendazim"/>
+        <Class IRI="#CopperOxychloride"/>
+        <Class IRI="#Iprodione"/>
+        <Class IRI="#Propiconazole"/>
+        <Class IRI="#Steptocycline"/>
+        <Class IRI="#Strobilurin"/>
+        <Class IRI="#Triazole"/>
+        <Class IRI="#Trifloxystrobin"/>
+        <Class IRI="#Zineb"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#BlightOnLeaf"/>
-        <Class IRI="#LinearLesionOnLeaf"/>
+        <Class IRI="#Azoxystrobin"/>
+        <Class IRI="#Carbendazim"/>
+        <Class IRI="#Iprodione"/>
+        <Class IRI="#Propiconazole"/>
+        <Class IRI="#Strobilurin"/>
+        <Class IRI="#Triazole"/>
+        <Class IRI="#Trifloxystrobin"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#BlightOnLeaf"/>
-        <Class IRI="#PimpleOnLeaf"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#BlightOnLeaf"/>
-        <Class IRI="#SpotOnLeaf"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#CircularSpotOnLeaf"/>
-        <Class IRI="#EllipsoidSpotOnLeaf"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#DarkBrown"/>
-        <Class IRI="#GrayishBrown"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Distributable"/>
-        <Class IRI="#NonDistributable"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#GrayishGreen"/>
-        <Class IRI="#PaleGreen"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#LightYellow"/>
-        <Class IRI="#YellowBrown"/>
-        <Class IRI="#Yellowish"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#LinearLesionOnLeaf"/>
-        <Class IRI="#PimpleOnLeaf"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#LinearLesionOnLeaf"/>
-        <Class IRI="#SpotOnLeaf"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#PimpleOnLeaf"/>
-        <Class IRI="#SpotOnLeaf"/>
+        <Class IRI="#B._subtilis"/>
+        <Class IRI="#Bacillus_sp."/>
+        <Class IRI="#Fluorescens"/>
+        <Class IRI="#P._aeruginosa"/>
+        <Class IRI="#Pseudomonas"/>
+        <Class IRI="#Pseudomonas_sp."/>
     </DisjointClasses>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#abnormalityGroup"/>
+        <ObjectProperty IRI="#isBiologicalControlOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasColor"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasDistribution"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasGrowthStage"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasShape"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasSymptom"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasSymptomAt"/>
+        <ObjectProperty IRI="#isChemicalControlOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <AnnotationAssertion>
@@ -3865,72 +1262,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/PlantViralDisease</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">plant viral disease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">APS:Plant_Diseases</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PDO:Laura_Moore</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PDO:Laurel_Cooper</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PDO:saisree_uppala</Literal>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A rice bacterial disease (PDO:0000003) caused by Xanthomonas oryzae pv oryzae (PDO:0000017).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">moorel</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-04-05T10:37:53Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO_SF2_PSO:31</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PSO_GIT:30</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice bacterial blight </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">plant_disease_ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PDO:0000014</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <IRI>http://purl.obolibrary.org/obo/pdo#Oryza_sativa_L</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/RiceBacterialBlightDisease</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice bacterial blight disease</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -5202,6 +2533,67 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">telomorph</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">APS:Plant_Diseases</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PDO:Laura_Moore</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PDO:Laurel_Cooper</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PDO:saisree_uppala</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#RiceBacterialBlightDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A rice bacterial disease (PDO:0000003) caused by Xanthomonas oryzae pv oryzae (PDO:0000017).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>#RiceBacterialBlightDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">moorel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>#RiceBacterialBlightDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-04-05T10:37:53Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <IRI>#RiceBacterialBlightDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO_SF2_PSO:31</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <IRI>#RiceBacterialBlightDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PSO_GIT:30</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#RiceBacterialBlightDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice bacterial blight </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>#RiceBacterialBlightDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">plant_disease_ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>#RiceBacterialBlightDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PDO:0000014</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiceBacterialBlightDisease</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice bacterial blight disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.geneontology.org/formats/oboInOwl#SubsetProperty</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">subset_property</Literal>
@@ -5258,37 +2650,37 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BrownPlanthopper</IRI>
+        <IRI>http://www.semanticweb.org/ontologies/RiceDO/v1.1#BrownPlanthopper</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">brown planthopper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#GreenRiceLeafhopper</IRI>
+        <IRI>http://www.semanticweb.org/ontologies/RiceDO/v1.1#GreenRiceLeafhopper</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">green rice leafhopper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RiceBlackBug</IRI>
+        <IRI>http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceBlackBug</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice black bug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RiceDirtyPanicleDisease</IRI>
+        <IRI>http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceDirtyPanicleDisease</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice dirty panicle disease</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RiceGallDwarfVirusDisease</IRI>
+        <IRI>http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceGallDwarfVirusDisease</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rice gall dwarf virus disease</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RiceOrangeLeafDisease</IRI>
+        <IRI>http://www.semanticweb.org/ontologies/RiceDO/v1.1#RiceOrangeLeafDisease</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rice orange leaf disease</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ZigzagLeafhopper</IRI>
+        <IRI>http://www.semanticweb.org/ontologies/RiceDO/v1.1#ZigzagLeafhopper</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">zigzag leafhopper</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
